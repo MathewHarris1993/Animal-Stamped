@@ -6,7 +6,7 @@ public class PlayerControls : MonoBehaviour
 {
     public float horizontalInput;
     public float speed = 10.0f;
-    public float xRange = 10.0f;
+    public float xRange = 20.0f;
     public GameObject foodPrefab;
 
 
