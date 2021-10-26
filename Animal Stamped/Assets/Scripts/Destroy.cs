@@ -19,12 +19,16 @@ public class Destroy : MonoBehaviour
     {
         if(transform.position.z > topBound)
         {
+            //destroys objects as they pass top
             Destroy(gameObject);
              
         } 
         else if(transform.position.z < lowerBound)
         {
+            //destroys objects as they pass bottom
             Destroy(gameObject);
+            Debug.Log("Game Over");
+
         }
     }
 }

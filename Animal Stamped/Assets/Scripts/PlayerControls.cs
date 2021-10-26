@@ -19,6 +19,7 @@ public class PlayerControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //set limits on x movement
         if (transform.position.x < -xRange)
         {
             transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
@@ -32,7 +33,7 @@ public class PlayerControls : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
 
-
+        
         if(Input.GetKeyDown(KeyCode.Space))
         {
             //Launch food
